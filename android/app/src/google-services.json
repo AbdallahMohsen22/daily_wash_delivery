@@ -1,0 +1,137 @@
+{
+  "project_info": {
+    "project_number": "637468107690",
+    "project_id": "dailywash-67f79",
+    "storage_bucket": "dailywash-67f79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637468107690:android:c8727e7ddf3720a25ec1d3",
+        "android_client_info": {
+          "package_name": "com.dailyWashUser.pavilion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637468107690-ditmogt70s2mfb8cc6h7v3d1j55degci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dailyWashUser.pavilion",
+            "certificate_hash": "31b6d036d3457e6a075f2dbc220fa6df9f831528"
+          }
+        },
+        {
+          "client_id": "637468107690-3uk7n7mjagu6mt5lec000p3dkeaegql7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApOW4SKZWfgHfnzbPsdLiD20LLOyYwu8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637468107690-3uk7n7mjagu6mt5lec000p3dkeaegql7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "637468107690-059rsm32hvabm8gfp0gk6t449qj328i7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dailyWashUser.pavilion",
+                "app_store_id": "6474781310"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637468107690:android:297439618bee92cd5ec1d3",
+        "android_client_info": {
+          "package_name": "com.daily_wash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637468107690-4upbp0uo5tuv13qvncmc0nj7qenl751q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.daily_wash",
+            "certificate_hash": "5afe50168e8e713a46592b70d28ba013630bed36"
+          }
+        },
+        {
+          "client_id": "637468107690-3uk7n7mjagu6mt5lec000p3dkeaegql7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApOW4SKZWfgHfnzbPsdLiD20LLOyYwu8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637468107690-3uk7n7mjagu6mt5lec000p3dkeaegql7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "637468107690-059rsm32hvabm8gfp0gk6t449qj328i7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dailyWashUser.pavilion",
+                "app_store_id": "6474781310"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637468107690:android:3b12f75da207f1745ec1d3",
+        "android_client_info": {
+          "package_name": "com.daily_wash_delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637468107690-3uk7n7mjagu6mt5lec000p3dkeaegql7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApOW4SKZWfgHfnzbPsdLiD20LLOyYwu8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637468107690-3uk7n7mjagu6mt5lec000p3dkeaegql7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "637468107690-059rsm32hvabm8gfp0gk6t449qj328i7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dailyWashUser.pavilion",
+                "app_store_id": "6474781310"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
