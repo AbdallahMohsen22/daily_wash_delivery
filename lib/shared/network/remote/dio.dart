@@ -9,7 +9,7 @@ class DioHelper {
   static void init() {
     dio = Dio(
       BaseOptions(
-        baseUrl: 'https://daily-wash-api.afyamed.co/',
+        baseUrl: 'http://162.240.235.136:5555/',
         receiveTimeout: const Duration(seconds: 60),
         connectTimeout: const Duration(seconds: 60),
         receiveDataWhenStatusError: true,
