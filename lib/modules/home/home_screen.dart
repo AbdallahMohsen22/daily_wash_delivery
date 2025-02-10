@@ -9,12 +9,15 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import '../../layout/cubit/app_states.dart';
+import '../../shared/styles/colors.dart';
 import '../widgets/home/home_appbar.dart';
 import '../widgets/home/home_dropdown.dart';
 import '../widgets/home/order_list_shimmer.dart';
 import '../widgets/home/order_widget.dart';
+import '../widgets/item_shared/default_button.dart';
 import '../widgets/item_shared/list_is_empty.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -45,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                     image: DecorationImage(
                         image: AssetImage(Images.background),
                         fit: BoxFit.cover
-                    )
+                    ),
                 ),
                 child: Column(
                   children: [
@@ -62,7 +65,26 @@ class HomeScreen extends StatelessWidget {
                               HomeAppBar(),
                               Padding(
                                 padding: const EdgeInsets.symmetric(horizontal: 30.0),
-                                child: HomeDropDown(),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    HomeDropDown(),
+                                    DefaultButton(
+                                      width: 150,
+                                      height:35,
+                                      textSize: 13,
+                                      radius: 10,
+                                      text: 'Accept All',
+                                      onTap: (){
+                                        // // cubit.acceptAllOrder(context: context);
+                                        // context.read<AppCubit>().acceptAllOrder(context: context);
+                                        for (int i=0;i<cubit.orderModel2!.data!.data!.length;i++){
+                                          cubit.bookOrder(context: context, data: cubit.orderModel2!.data!.data![i]);
+                                        }
+                                      },
+                                    ),
+                                  ],
+                                ),
                               ),
                             ],
                           ),

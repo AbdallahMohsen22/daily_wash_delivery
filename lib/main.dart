@@ -41,7 +41,8 @@ void main() async{
   DioHelper.init();
 
   String? loca = CacheHelper.getData(key: 'locale');
-  token = CacheHelper.getData(key: 'token');
+  // token = CacheHelper.getData(key: 'token');
+  token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZV9udW1iZXIiOiIwNTYyNDQyMTM0IiwidXNlcl9pZCI6IjY1YjI1MDIzMDM0MzgwMDAzM2I0NDE0ZSIsInVzZXJfdHlwZSI6ImRlbGl2ZXJ5X21hbiIsImlhdCI6MTczNDk2Mzc4M30.Gl3Pp_Q0vRywfa72FHpPVuIS-eJ4nhShe3snY2PXaTo';
   print('Token=====<<>> $token');
   userId = CacheHelper.getData(key: 'userId');
   PackageInfo packageInfo = await PackageInfo.fromPlatform();
@@ -102,7 +103,9 @@ class MyApp extends StatelessWidget {
           );
         },
         home: LoginScreen(),
+        // home: HomeScreen(),
       ),
     );
   }
 }
+/// 0562442134

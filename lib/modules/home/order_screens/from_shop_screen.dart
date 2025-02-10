@@ -17,12 +17,10 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../../layout/cubit/app_cubit.dart';
 import '../../../layout/cubit/app_states.dart';
 import '../../../models/order_model.dart';
-import '../../../shared/components/constants.dart';
 import '../../../shared/images/images.dart';
 import '../../widgets/home/order/contact_order.dart';
 import '../../widgets/home/order/google_map.dart';
-import '../../widgets/home/order/receipt_bottom_sheet.dart';
-import '../../widgets/home/order/receipt_widget.dart';
+
 import '../../widgets/home/order/to_map.dart';
 import '../../widgets/image_zoom.dart';
 

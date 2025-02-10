@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:daily_wash/layout/cubit/app_states.dart';
@@ -289,7 +290,45 @@ class AppCubit extends Cubit<AppStates>{
       }
     }
   }
+void acceptAllOrder({BuildContext? context})async{
+    await DioHelper.postData(
+        url: '${EndPoints.allBookOrder}',
+        token: 'Bearer $token',
+    ).then((value){
+      if(value.statusCode == 200){
+        UIAlert.showAlert(context,
+          message: value.data['message'],
+        );
+        emit(BookOrderSuccessState());
+      }else{
+        // bool? stopExecute = value.data['data']['stop_execute'];
+        // if(stopExecute!=null){
+        //   showDialog(
+        //       context: context!,
+        //       barrierDismissible: false,
+        //       builder: (context)=>AccountIsBlocked()
+        //   );
+        // };
+        UIAlert.showAlert(context,
+            message: value.data['message'] ?? 'wrong'.tr(),type: MessageType.warning
+        );
+        emit(BookOrderWrongState());
+      }
+    }).catchError((e,s){
+     if(e is DioException)
+       {
+         log('Dio exception ===>>> $e');
+         log('Dio Stack ===>>> $s');
+         emit(BookOrderErrorState());
+       }
+     else{
+       log(' exception ===>>> $e');
+       log(' Stack ===>>> $s');
+       emit(BookOrderErrorState());
 
+     }
+    });
+}
 
   void getOrders({
     required BuildContext context,
@@ -409,12 +448,14 @@ class AppCubit extends Cubit<AppStates>{
             }else{
               AppCubit.get(context).receiptImage= null;
               AppCubit.get(context).emitState();
+              emit(ChangeOrderStatusSuccessState());
               navigateAndFinish(context, AppLayout());
             }
           }else if (status == 5){
             navigateAndFinish(context, CompleteOrderScreen(itemNumber: '${data?.itemNumber??'0'}',));
           };
         }
+
       else {
           bool? stopExecute = value.data['data']['stop_execute'];
           if(stopExecute!=null){

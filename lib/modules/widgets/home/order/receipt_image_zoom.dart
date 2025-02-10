@@ -155,10 +155,10 @@ class _ReceiptImageZoomState extends State<ReceiptImageZoom> {
                     ],
                   ),
                   const Gap(20),
-                  if(showScreenShot)
-                  InkWell(
-                    onTap: ()=>screenShot(),
-                      child:ScreenShotWidget()),
+                  // if(showScreenShot)
+                  // InkWell(
+                  //   onTap: ()=>screenShot(),
+                  //     child:ScreenShotWidget()),
                 ],
               ),
             )

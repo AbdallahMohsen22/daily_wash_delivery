@@ -113,10 +113,7 @@ class _ReceiptBottomSheetState extends State<ReceiptBottomSheet> {
                       icon:const Icon(Icons.delete,color: Colors.red,size: 25,))
                 ],
               ),
-              fallback:(c)=> InkWell(
-                onTap:()=>AppCubit.get(context).pick(),
-                child: ScreenShotWidget()
-              )
+              fallback:(c)=> Container(),
           ),
           const SizedBox(height: 30,),
           ConditionalBuilder(
@@ -129,8 +126,6 @@ class _ReceiptBottomSheetState extends State<ReceiptBottomSheet> {
                     showToast(msg: tr('choose_day'),toastState: true);
                   }else if(currentHourIndex==null){
                     showToast(msg: tr('choose_hour'),toastState: true);
-                  }else if(AppCubit.get(context).receiptImage==null){
-                    showToast(msg: tr('please_take_photo'),toastState: true);
                   }else {
                     String date = '${DateFormat('yyyy-MM-dd').format(DateTime(DateTime.now().year,DateTime.now().month,currentDayIndex!))} $currentHourVal';
                     AppCubit.get(context).changeOrderStatus(

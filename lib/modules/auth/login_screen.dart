@@ -57,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                     validator: (str){
                       if(str.isEmpty) return tr('phone_empty');
                     },
-                    type: TextInputType.name,
+                    type: TextInputType.phone,
                     autofocus: true,
                     hint: '+971 ********',
                     suffix: Padding(

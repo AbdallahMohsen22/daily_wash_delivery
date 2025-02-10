@@ -1,5 +1,4 @@
-class Images{
-
+class Images {
   static const String holder = 'assets/images/holder.webp';
   static const String splash = 'assets/images/splash.png';
   static const String phone = 'assets/images/phone.png';
@@ -10,8 +9,10 @@ class Images{
   static const String settingSelect = 'assets/images/setting_select.png';
   static const String homeSelect = 'assets/images/home_select.png';
   static const String homeNotSelect = 'assets/images/home_not_select.png';
-  static const String notificationNotSelect = 'assets/images/notification_not_select.png';
-  static const String notificationSelect = 'assets/images/notification_select.png';
+  static const String notificationNotSelect =
+      'assets/images/notification_not_select.png';
+  static const String notificationSelect =
+      'assets/images/notification_select.png';
   static const String appbar = 'assets/images/appbar.png';
   static const String photoPerson = 'assets/images/photo_person.png';
   static const String notification = 'assets/images/notification.png';
@@ -34,7 +35,8 @@ class Images{
   static const String active = 'assets/images/active.png';
   static const String inactive = 'assets/images/inactive.png';
   static const String compliments = 'assets/images/compliments.png';
-  static const String notificationSettings = 'assets/images/notification_settings.png';
+  static const String notificationSettings =
+      'assets/images/notification_settings.png';
   static const String contactus = 'assets/images/contactus.png';
   static const String abuotus = 'assets/images/aboutus.png';
   static const String terms = 'assets/images/terms.png';
@@ -59,5 +61,4 @@ class Images{
   static const String pavilion = 'assets/images/pavilion.png';
   static const String mobile = 'assets/images/mobile.png';
   static const String background = 'assets/images/background.jpeg';
-
 }

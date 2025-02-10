@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:gap/gap.dart';
 
 import '../../layout/app_layout.dart';
 import '../../shared/components/components.dart';
@@ -115,13 +116,14 @@ class _VerificationScreenState extends State<VerificationScreen> {
   listener: (context, state) {},
   builder: (context, state) {
     return Scaffold(
-      body: InkWell(
-        onTap: ()=>FocusManager.instance.primaryFocus?.unfocus(),
-        overlayColor: MaterialStateProperty.all(Colors.transparent),
-        child: Center(
-          child:Padding(
+      body: SingleChildScrollView(
+        child: InkWell(
+          onTap: ()=>FocusManager.instance.primaryFocus?.unfocus(),
+          overlayColor: MaterialStateProperty.all(Colors.transparent),
+          child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: Column(
+              // mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(Images.splash,height: 116,width: 116,),
@@ -219,6 +221,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                     '00:$_start',
                   ),
                 ),
+
               ],
             ),
           ),
