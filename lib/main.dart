@@ -30,7 +30,7 @@ void main() async{
     await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform
     );
-//0562442134
+
     NotificationHelper();
     fcmToken = await FirebaseMessaging.instance.getToken();
   }catch(e){
